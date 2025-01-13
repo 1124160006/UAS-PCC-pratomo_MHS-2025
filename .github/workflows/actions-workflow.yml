@@ -1,4 +1,18 @@
+docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/image_name:latest -f Dockerfile
+docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.dockerhub_AccessToken}} && docker push dockerhub_username/image_name
+:latest
+
+
+
 # This is a basic workflow to help you get started with Actions
+
+
+
+
+
+
+
+
 
 name: CI
 
