@@ -1,4 +1,4 @@
-docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/image_name:latest -f Dockerfile
+docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/1124160006-patch-1-development-1:latest -f Dockerfile
 docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.dockerhub_AccessToken}} && docker push dockerhub_username/image_name
 :latest
 
@@ -14,7 +14,7 @@ docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.do
 
 
 
-name: CI
+name: UAS-PCC-pratomo_MHS-2025
 
 # Controls when the workflow will run
 on:
@@ -22,7 +22,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "1124160006-patch-1-development-1" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
