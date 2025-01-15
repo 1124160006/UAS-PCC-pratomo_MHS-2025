@@ -1,4 +1,4 @@
-docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/1124160006-patch-1-development-1:latest -f Dockerfile
+docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/1124160006:latest -f Dockerfile
 docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.dockerhub_AccessToken}} && docker push dockerhub_username/image_name
 :latest
 
@@ -37,7 +37,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
