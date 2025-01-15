@@ -1,5 +1,5 @@
-docker build -t dockerhub_UAS-PCC-pratomo_MHS-2025/1124160006:latest -f Dockerfile
-docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.dockerhub_AccessToken}} && docker push dockerhub_username/image_name
+docker build -t dockerhub_1124160006/UAS-PCC-pratomo_MHS-2025:latest -f Dockerfile
+docker login -u ${{secrets.1124160006/UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.dockerhub_AccessToken}} && docker push dockerhub_1124160006/image_name
 :latest
 
 
@@ -14,7 +14,7 @@ docker login -u ${{secrets.dockerhub_UAS-PCC-pratomo_MHS-2025}} -p ${{secrets.do
 
 
 
-name: UAS-PCC-pratomo_MHS-2025
+name:1124160006/UAS-PCC-pratomo_MHS-2025
 
 # Controls when the workflow will run
 on:
